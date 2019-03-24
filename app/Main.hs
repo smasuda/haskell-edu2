@@ -1,6 +1,9 @@
 module Main where
 
-import Lib
+import qualified LangExts.ViewPattern as LV
+import qualified LangExts.PatternSynonyms as LP
 
 main :: IO ()
-main = someFunc
+main = do
+    LV.run
+    LP.run
